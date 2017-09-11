@@ -1,0 +1,64 @@
+.button {
+	padding: 10px 20px;
+	background: $default-button-bg;
+    border: $default-button-border;
+    color: $default-button-color;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+    text-decoration: none;
+    @include animate(all, 0.3s);
+
+    &:hover {
+    	color: $default-button-hover-color;
+    	text-decoration: none;
+    }
+
+    &:after {
+		content: '';
+		position: absolute;
+		width: 0%;
+		height: 103%;
+		top: 50%;
+		left: 50%;
+		background: $default-button-hover-bg;
+		opacity: 0;
+		z-index: -1;
+		@include translateAt(-50%, -50%);
+		@include animate(all, 0.2s);
+	}
+
+	&:hover:after {
+	    width: 100%;
+	    opacity: 1;
+	}
+
+	&:active:after {
+	    width: 100%;
+	    opacity: 1;
+	}
+}
+
+.form {
+	&.login {
+		.button {
+			background: none;
+			border: 3px solid #FFF;
+			color: #FFF;
+			font-size: 18px;
+
+			&:hover {
+				color: $default-button-color;
+			}
+			&:hover:after {
+				background: #FFF;
+			    width: 100%;
+			}
+		}
+	}
+}

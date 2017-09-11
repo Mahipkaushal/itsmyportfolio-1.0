@@ -1,0 +1,65 @@
+.form {	
+	input[type="text"],
+	input[type="number"],
+	input[type="email"],
+	input[type="password"],
+	textarea {
+		padding: 10px 10px 10px 0px;
+		background: none;
+		color: $default-text-color;
+		border: none;
+		border-bottom: 1px solid #CCC;
+		font-size: 15px;
+		border-radius: 0px;
+		box-shadow: none;
+		@include animate();
+
+		&.no-resize {
+			max-width: 100%;
+		}
+
+		&:focus {
+			background: none;
+			color: #000;
+			outline: none;
+			box-shadow: none;
+			border-bottom: 1px solid $primary-color-shade-3;
+		}
+
+		&:focus ~ label {
+			color: $primary-color-shade-3;
+		}
+
+		&:focus ~ label,
+		&:valid ~ label {
+			top: 7px;
+			font-size: 12px;
+		}
+
+		&:focus ~ span.bar:before,
+		&:focus ~ span.bar:after {
+			width: 50%;
+		}
+
+	}
+
+	&.login {
+		input[type="text"],
+		input[type="number"],
+		input[type="email"],
+		input[type="password"],
+		textarea {
+			color: $login-form-text-color;
+			border-bottom: 1px solid $login-form-text-color;
+
+			&:focus {
+				color: $login-form-text-focus-color;
+				border-bottom: 1px solid $login-form-text-focus-color;
+			}
+
+			&:focus ~ label {
+				color: $login-form-text-focus-color;
+			}
+		}
+	}
+}

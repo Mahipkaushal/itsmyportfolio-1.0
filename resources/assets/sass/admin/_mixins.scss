@@ -1,0 +1,23 @@
+
+// Transitions
+@mixin animate($property: all, $duration: 0.4s, $type: linear) {
+	-webkit-transition: $property $duration $type;
+	-ms-transition: $property $duration $type;
+	-o-transition: $property $duration $type;
+	-moz-transition: $property $duration $type;
+	transition: $property $duration $type;
+}
+
+// Calculated Width, Height, Top, Left and etc
+@mixin calc($property, $expression) {
+	#{$property}: -webkit-calc(#{$expression});
+	#{$property}: calc(#{$expression});
+}
+
+@mixin translateAt($x, $y) {
+	-webkit-transform: translateX($x) translateY($y);
+	-ms-transform: translateX($x) translateY($y);
+	-o-transform: translateX($x) translateY($y);
+	-moz-transform: translateX($x) translateY($y);
+	transform: translateX($x) translateY($y);
+}
