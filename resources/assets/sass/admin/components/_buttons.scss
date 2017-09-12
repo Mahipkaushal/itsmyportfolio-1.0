@@ -14,7 +14,7 @@
     text-decoration: none;
     @include animate(all, 0.3s);
 
-    &:hover {
+    &.btn-ripple:hover {
     	color: $default-button-hover-color;
     	text-decoration: none;
     }
@@ -33,14 +33,20 @@
 		@include animate(all, 0.2s);
 	}
 
-	&:hover:after {
+	&.btn-ripple:hover:after {
 	    width: 100%;
 	    opacity: 1;
 	}
 
-	&:active:after {
+	&.btn-ripple:active:after {
 	    width: 100%;
 	    opacity: 1;
+	}
+
+	&.icon-btn {
+		background: none;
+	    border: 1px solid #0099cc;
+	    padding: 4px 10px;
 	}
 }
 

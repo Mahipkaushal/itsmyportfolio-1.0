@@ -18,7 +18,7 @@ class AboutController extends Controller
 	{
 		$user = Auth::user();
 		$about = $user->about;
-
+		
 		return view('admin.pages.about')->with([
 			'heading'	=>	$this->heading,
 			'about'		=>	$about
