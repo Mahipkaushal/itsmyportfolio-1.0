@@ -95,12 +95,37 @@
 
 							</div>
 
+							<div class="row no-gutters">
+								<div class="col-xs-12 col-sm-12 col-md-12">
+									<fieldset>
+										<div class="field-group">
+											<div class="social-links" id="social_links">
+
+												<span class="badge social-badge facebook-badge">
+													<i class="fa fa-facebook" aria-hidden="true"></i>
+												</span>
+												<span class="badge social-badge twitter-badge">
+													<i class="fa fa-twitter" aria-hidden="true"></i>
+												</span>
+												<span class="badge social-badge github-badge">
+													<i class="fa fa-github" aria-hidden="true"></i>
+												</span>
+
+												<a class="button icon-btn" id="add-social-link-row"><i class="fa fa-plus"></i></a>
+											</div>
+											<span class="bar"></span>
+											<label for="social_links" class="active">Social Links</label>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+
 							<div class="row">
 								<div class="col-xs-12 col-sm-12 col-md-12">
 									<fieldset>
 										<div class="field-group text-right">
 											<a id="btn-about-save" class="button btn-ripple btn-about-save">
-												<i class="fa fa-save" aria-hidden="true"></i>  &nbsp;Save
+												<i class="fa fa-save" aria-hidden="true"></i> Save
 											</a>					
 										</div>
 									</fieldset>
@@ -119,7 +144,7 @@
 
 	</div>
 
-	<div class="row">
+<!-- 	<div class="row">
 		<div class="col-md-12 col-sm-12 col-xs-12">
 			<div class="x_panel">
 				<div class="x_title">
@@ -166,7 +191,7 @@
 
 		<div class="clearfix"></div>
 		
-	</div>
+	</div> -->
 
 </div>
 @endsection

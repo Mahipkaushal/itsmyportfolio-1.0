@@ -43,6 +43,31 @@
 
 	}
 
+	label.active {
+		top: 7px;
+		font-size: 12px;
+	}
+
+	div.social-links {
+		padding: 10px 40px 10px 0px;
+	    background: none;
+	    color: #333;
+	    border: none;
+	    border-bottom: 1px solid #CCC;
+	    font-size: 15px;
+	    border-radius: 0px;
+	    box-shadow: none;
+	    -webkit-transition: all 0.4s linear;
+	    transition: all 0.4s linear;
+	    position: relative;
+
+	    .button.icon-btn {
+	    	position: absolute;
+		    right: 0px;
+		    top: 10px;
+	    }
+	}
+
 	&.login {
 		input[type="text"],
 		input[type="number"],

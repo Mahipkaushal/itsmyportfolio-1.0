@@ -313,6 +313,63 @@ a.menu-toggler {
 		}
 	}
 }
+.badge {
+	&.social-badge {
+		font-size: 18px;
+	    padding: 5px 20px;
+	    border-radius: 3px;
+	    margin-right: 5px;
+	    cursor: pointer;
+	    position: relative;
+	    @include animate(all, 0.3s);
+
+	    &:after {
+	    	font: normal normal normal 14px/1 FontAwesome;
+	    	position: absolute;
+	    	content: '\f00d';
+	    	margin-top: 2px;
+	    	-webkit-transform: scale(0) translateX(30%);
+    		-ms-transform: scale(0) translateX(30%);
+    		-moz-transform: scale(0) translateX(30%);
+    		transform: scale(0) translateX(30%);
+	    	@include animate(all, 0.3s);
+	    }
+
+	    .fa {
+			@include animate(all, 0.3s);	    	
+	    }
+
+	    &:hover {
+	    	padding: 5px 30px 5px 10px;
+
+	    	.fa {
+	    		-webkit-transform: scale(0.7);
+	    		-ms-transform: scale(0.7);
+	    		-moz-transform: scale(0.7);
+	    		transform: scale(0.7);
+	    	}
+
+	    	&:after {
+	    		-webkit-transform: scale(1) translateX(95%);
+	    		-ms-transform: scale(1) translateX(95%);
+	    		-moz-transform: scale(1) translateX(95%);
+	    		transform: scale(1) translateX(95%);
+	    	}
+	    }
+
+	    &.facebook-badge {
+	    	background: #4267b2;
+	    }
+
+	    &.twitter-badge {
+	    	background: #1DA1F2;
+	    }
+
+	    &.github-badge {
+	    	background: #24292e;
+	    }
+	}
+}
 .footer .container {
 	padding: 30px 0px;
 	color: #8a8a8a;
